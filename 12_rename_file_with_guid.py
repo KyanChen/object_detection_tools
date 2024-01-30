@@ -17,9 +17,9 @@ def rename_file(item):
 if __name__ == '__main__':
     # for i in range(3, 6):
     #     folder = f"G:\光学数据\part{i}"
-    folder = "G:\check_folder\images"
-    img_format = '.jpg'
-    dataset_type = 1
+    folder = "G:\红外数据\part7"
+    img_format = '.png'
+    dataset_type = 6
     nproc = 16
     csv_files = glob.glob(os.path.join(folder, '*.csv'))
     files = [(file, img_format, dataset_type) for file in csv_files]

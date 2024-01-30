@@ -5,7 +5,7 @@ import mmcv
 import numpy as np
 import pandas as pd
 
-folder = r'G:\SAR数据\part14'
+folder = r'H:\红外数据\part1'
 files = glob.glob(folder + '/*.csv')
 files = random.sample(files, 10)
 for file in files:

@@ -2,7 +2,6 @@ import numpy as np
 import cv2
 import glob
 import os
-
 import pandas as pd
 import tqdm
 from skimage import io
@@ -17,7 +16,6 @@ def jaccard_numpy(rect, bboxes):
     bboxes_area = (bboxes[:, 2] - bboxes[:, 0] + 1) * (bboxes[:, 3] - bboxes[:, 1] + 1)
     iou = intersection / (rect_area + bboxes_area - intersection)
     return iou
-
 
 
 def cut_with_label(file_list):
